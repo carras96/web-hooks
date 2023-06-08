@@ -2,7 +2,6 @@
   "name": "web-hooks",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://carras96.github.io/web-hooks/",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,7 +11,7 @@
     "prettier": "prettier --check \"src/**/(*.tsx|*.ts|*.css|*.scss)\"",
     "prettier:fix": "prettier --write \"src/**/(*.tsx|*.ts|*.css|*.scss)\"",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
