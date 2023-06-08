@@ -55,10 +55,10 @@ const Landing = () => {
   const enterPress = useKeyPress('Enter')
   const ctrlPress = useKeyPress('Control')
 
-  const onSelectChange = (sl: any) => {
-    console.log('selected Option...', sl)
-    setLanguage(sl)
-  }
+//   const onSelectChange = (sl: any) => {
+//     console.log('selected Option...', sl)
+//     setLanguage(sl)
+//   }
 
   useEffect(() => {
     if (enterPress && ctrlPress) {
@@ -162,16 +162,16 @@ const Landing = () => {
     }
   }
 
-  function handleThemeChange(th: { value: string; label: string }) {
-    const theme = th
-    console.log('theme...', theme)
+//   function handleThemeChange(th: { value: string; label: string }) {
+//     const theme = th
+//     console.log('theme...', theme)
 
-    if (['light', 'vs-dark'].includes(theme.value)) {
-      setTheme(theme)
-    } else {
-      defineTheme(theme.value).then((_) => setTheme(theme))
-    }
-  }
+//     if (['light', 'vs-dark'].includes(theme.value)) {
+//       setTheme(theme)
+//     } else {
+//       defineTheme(theme.value).then((_) => setTheme(theme))
+//     }
+//   }
   useEffect(() => {
     defineTheme('oceanic-next').then((_) => setTheme({ value: 'oceanic-next', label: 'Oceanic Next' }))
   }, [])

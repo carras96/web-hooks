@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { AppShell, Navbar, Header, Footer, Aside, Text, MediaQuery, Burger, useMantineTheme } from '@mantine/core'
+import { AppShell, Navbar, Header, Footer, Text, MediaQuery, Burger, useMantineTheme } from '@mantine/core'
 import Landing from '../components/Landing'
 
 export default function AppShellWrapp() {
