@@ -10,7 +10,7 @@ import axios from 'axios'
 import { defineTheme } from '../lib/defineTheme'
 
 const REACT_APP_RAPID_API_HOST = 'https://judge0-ce.p.rapidapi.com'
-const REACT_APP_RAPID_API_KEY = '52cbea632amsh4c77e81f6ef27d0p1bbf3fjsn7fab1bd652a5'
+const REACT_APP_RAPID_API_KEY = '9900d74dedmshcbf9c535ebc52fap10fe40jsn0bdfe4e7cb0c'
 const REACT_APP_RAPID_API_URL = 'https://judge0-ce.p.rapidapi.com/submissions'
 
 const javascriptDefault = `/**
@@ -55,10 +55,10 @@ const Landing = () => {
   const enterPress = useKeyPress('Enter')
   const ctrlPress = useKeyPress('Control')
 
-//   const onSelectChange = (sl: any) => {
-//     console.log('selected Option...', sl)
-//     setLanguage(sl)
-//   }
+  //   const onSelectChange = (sl: any) => {
+  //     console.log('selected Option...', sl)
+  //     setLanguage(sl)
+  //   }
 
   useEffect(() => {
     if (enterPress && ctrlPress) {
@@ -95,7 +95,7 @@ const Landing = () => {
         'content-type': 'application/json',
         'Content-Type': 'application/json',
         'X-RapidAPI-Host': REACT_APP_RAPID_API_HOST,
-        'X-RapidAPI-Key': REACT_APP_RAPID_API_KEY,
+        'X-RapidAPI-Key': REACT_APP_RAPID_API_KEY
         // 'x-rapidapi-ua': 'RapidAPI-Playground'
       },
       data: formData
@@ -133,7 +133,7 @@ const Landing = () => {
       params: { base64_encoded: 'true', fields: '*' },
       headers: {
         'X-RapidAPI-Host': REACT_APP_RAPID_API_HOST,
-        'X-RapidAPI-Key': REACT_APP_RAPID_API_KEY,
+        'X-RapidAPI-Key': REACT_APP_RAPID_API_KEY
         // 'x-rapidapi-ua': 'RapidAPI-Playground'
       }
     }
@@ -162,16 +162,16 @@ const Landing = () => {
     }
   }
 
-//   function handleThemeChange(th: { value: string; label: string }) {
-//     const theme = th
-//     console.log('theme...', theme)
+  //   function handleThemeChange(th: { value: string; label: string }) {
+  //     const theme = th
+  //     console.log('theme...', theme)
 
-//     if (['light', 'vs-dark'].includes(theme.value)) {
-//       setTheme(theme)
-//     } else {
-//       defineTheme(theme.value).then((_) => setTheme(theme))
-//     }
-//   }
+  //     if (['light', 'vs-dark'].includes(theme.value)) {
+  //       setTheme(theme)
+  //     } else {
+  //       defineTheme(theme.value).then((_) => setTheme(theme))
+  //     }
+  //   }
   useEffect(() => {
     defineTheme('oceanic-next').then((_) => setTheme({ value: 'oceanic-next', label: 'Oceanic Next' }))
   }, [])
