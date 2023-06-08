@@ -9,7 +9,7 @@ import { ToastContainer, toast } from 'react-toastify'
 import axios from 'axios'
 import { defineTheme } from '../lib/defineTheme'
 
-const REACT_APP_RAPID_API_HOST = 'https://judge0-ce.p.rapidapi.com'
+const REACT_APP_RAPID_API_HOST = 'judge0-ce.p.rapidapi.com'
 const REACT_APP_RAPID_API_KEY = '9900d74dedmshcbf9c535ebc52fap10fe40jsn0bdfe4e7cb0c'
 const REACT_APP_RAPID_API_URL = 'https://judge0-ce.p.rapidapi.com/submissions'
 
